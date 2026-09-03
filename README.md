@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shania | My Personal Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1677e8, #61c0ff);
+            color: #800080;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #800080;
+            color: white;
+            padding: 20px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav h2 {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        /* MAIN */
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        /* CARDS */
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #800080;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #800080;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #800080;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* LOVE SECTION */
+        .love-list {
+            list-style: none;
+            font-size: 19px;
+            line-height: 2;
+        }
+
+        /* VIDEO */
+        video {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+
+        /* AUDIO */
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #800080;
+          
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .title {
+                font-size: 27px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .card p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <h2>Shania 💜</h2>
+
+        <div>
+            <a href="#home">🏠 Home</a>
+            <a href="#about">👤 About Me</a>
+            <a href="#contact">📞 Contact Info</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main id="home">
+
+        <h1 class="title">
+            💜 Welcome to My Personal Website! 💜
+        </h1>
+
+        <!-- ABOUT ME -->
+        <section class="card" id="about">
+
+            <img
+                src="Messenger_creation_68B6124C-F1BC-4512-993D-94E9C2E21D3A.jpeg" 
+                class="profile"
+                alt="Shania"
+            >
+
+            <h3>Hello! 👋</h3>
+
+            <p>
+                Hi! I am <b>Shania Leonor</b>, and welcome to my personal
+                website! Here you can learn a little about me, my hobbies,
+                my personal interests, and my goals in life.
+            </p>
+
+        </section>
+
+        <!-- THINGS I LOVE -->
+        <section class="card">
+
+            <h2>💜 What I Love</h2>
+
+            <ul class="love-list">
+                <li>🧹 Doing Housechores</li>
+                <li>📸 Taking pictures of anything and myself</li>
+                <li>🎵 Listening to Music</li>
+                <li>💜 Anything Purple</li>
+            </ul>
+
+        </section>
+
+        <!-- GOALS -->
+        <section class="card">
+
+            <h2>🎯 My Goals</h2>
+
+            <p>
+                My goal in life is to graduate with a degree, become
+                successful, make my family proud, and build a good future
+                for myself and for my future family.
+            </p>
+
+        </section>
+
+        <!-- VIDEO -->
+        <section class="card">
+
+            <h2>🎥 Video</h2>
+
+            <video controls>
+                <source
+                    src="Messenger_creation_3B26BBCB-0B21-49AD-99FC-D85C1809714B.mp4" 
+                    
+                
+
+                
+            </video>
+
+        </section>
+
+        <!-- AUDIO -->
+        <section class="card">
+
+            <h2>🎵 Audio</h2>
+
+            <audio controls>
+                <source
+                    src="Adie - Paraluman (Official Audio).m4a" 
+                    
+                >
+
+               
+            </audio>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section class="card" id="contact">
+
+            <h2>📞 Contact Info</h2>
+
+            <p>
+                You can contact me through my social media accounts.
+            </p>
+            <ul>
+                <li> 09393595062 </li>
+                <li> shanialeonor.29@gmail.com
+               </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 Shania Leonor | My Personal Website 💜
+        </p>
+    </footer>
+
+</body>
+</html>
